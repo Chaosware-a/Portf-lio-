@@ -1,0 +1,88 @@
+<!DOCTYPE html> 
+<html lang="pt-BR"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Meu Primeiro Site</title> 
+    <!-- Inclui a biblioteca Tailwind CSS para estilização rápida e responsiva --> 
+    <script src="https://cdn.tailwindcss.com"></script> 
+    <!-- Define a fonte Inter para todo o site --> 
+    <style> 
+        body { 
+            font-family: 'Inter', sans-serif; 
+        } 
+    </style> 
+</head> 
+<body class="bg-slate-900 text-white min-h-screen flex flex-col justify-between"> 
+    <!-- Seção do cabeçalho --> 
+    <header class="bg-gray-800 p-6 shadow-lg"> 
+        <div class="container mx-auto flex justify-between items-center"> 
+            <h1 class="text-3xl font-bold text-teal-400">Meu Portfólio</h1> 
+            <nav> 
+                <ul class="flex space-x-4"> 
+                    <li><a href="#sobre" class="hover:text-teal-400 transition duration-300">Sobre Mim</a></li> 
+                    <li><a href="#projetos" class="hover:text-teal-400 transition duration-300">Projetos</a></li> 
+                    <li><a href="#contato" class="hover:text-teal-400 transition duration-300">Contato</a></li> 
+                </ul> 
+            </nav> 
+        </div> 
+    </header> 
+ 
+    <!-- Seção principal do conteúdo --> 
+    <main class="container mx-auto p-8 flex-grow"> 
+        <!-- Seção "Sobre Mim" --> 
+        <section id="sobre" class="mb-12 bg-gray-800 p-8 rounded-lg shadow-lg"> 
+            <div class="flex flex-col md:flex-row items-center md:space-x-8"> 
+                <img src="https://placehold.co/200x200/5eead4/111827?text=Foto" alt="Foto de Perfil" class="rounded-full w-40 h-40 mb-6 md:mb-0 border-4 border-teal-400"> 
+                <div> 
+                    <h2 class="text-4xl font-bold mb-4">Olá, eu sou a Gemini</h2> 
+                    <p class="text-lg text-gray-300 leading-relaxed"> 
+                        Sou um modelo de linguagem grande e meu objetivo é ajudar você a criar, codificar, pesquisar e muito mais. 
+                        Este site é um exemplo do que podemos construir juntos. Eu adoro aprender e resolver problemas de forma criativa. 
+                    </p> 
+                </div> 
+            </div> 
+        </section> 
+ 
+        <!-- Seção "Projetos" --> 
+        <section id="projetos" class="mb-12 bg-gray-800 p-8 rounded-lg shadow-lg"> 
+            <h2 class="text-3xl font-bold mb-6 text-teal-400">Meus Projetos</h2> 
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"> 
+                <!-- Card de Projeto 1 --> 
+                <div class="bg-slate-900 p-6 rounded-lg shadow-md transition transform hover:scale-105 duration-300"> 
+                    <h3 class="text-xl font-semibold mb-2">Projeto de E-commerce</h3> 
+                    <p class="text-gray-400 mb-4">Desenvolvimento de uma loja online completa, com carrinho de compras, pagamento e gestão de pedidos. Usado para mostrar habilidades de front-end.</p> 
+                    <a href="#" class="text-teal-400 hover:underline">Ver Projeto</a> 
+                </div> 
+                <!-- Card de Projeto 2 --> 
+                <div class="bg-slate-900 p-6 rounded-lg shadow-md transition transform hover:scale-105 duration-300"> 
+                    <h3 class="text-xl font-semibold mb-2">Aplicativo de Tarefas</h3> 
+                    <p class="text-gray-400 mb-4">Um aplicativo simples para organizar listas de tarefas diárias. Criado com foco em usabilidade e design minimalista.</p> 
+                    <a href="#" class="text-teal-400 hover:underline">Ver Projeto</a> 
+                </div> 
+                <!-- Card de Projeto 3 --> 
+                <div class="bg-slate-900 p-6 rounded-lg shadow-md transition transform hover:scale-105 duration-300"> 
+                    <h3 class="text-xl font-semibold mb-2">Blog Pessoal</h3> 
+                    <p class="text-gray-400 mb-4">Um blog para publicar artigos sobre tecnologia e desenvolvimento de software, demonstrando minhas habilidades de escrita.</p> 
+                    <a href="#" class="text-teal-400 hover:underline">Ver Projeto</a> 
+                </div> 
+            </div> 
+        </section> 
+         
+        <!-- Seção "Contato" --> 
+        <section id="contato" class="bg-gray-800 p-8 rounded-lg shadow-lg text-center"> 
+            <h2 class="text-3xl font-bold mb-6 text-teal-400">Entre em Contato</h2> 
+            <p class="text-lg text-gray-300 mb-6">Ficarei feliz em conversar sobre seus projetos ou ideias.</p> 
+            <div class="flex justify-center space-x-6"> 
+                <a href="mailto:contato@exemplo.com" class="bg-teal-400 text-slate-900 font-bold py-2 px-6 rounded-lg hover:bg-teal-500 transition duration-300">E-mail</a> 
+                <a href="https://linkedin.com/in/seuusuario" target="_blank" class="bg-teal-400 text-slate-900 font-bold py-2 px-6 rounded-lg hover:bg-teal-500 transition duration-300">LinkedIn</a> 
+            </div> 
+        </section> 
+    </main> 
+ 
+    <!-- Seção do rodapé --> 
+    <footer class="bg-gray-800 p-4 text-center text-gray-500 shadow-inner mt-8"> 
+        <p>© 2024 Meu Portfólio. Todos os direitos reservados.</p> 
+    </footer> 
+</body> 
+</html>
